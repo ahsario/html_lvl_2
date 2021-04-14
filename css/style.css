@@ -3,6 +3,9 @@
   --pink: #f1e4e6;
   --dark-pink: #f16d7d;
   --gray: #f8f8f8;
+  --dark-gray: #6f6e6e;
+  --white: white;
+  --red: ff6a6a;
 }
 
 body {
@@ -40,6 +43,46 @@ body {
 
 .header__navigation {
   display: none;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  width: 232px;
+  height: 764px;
+  background-color: var(--white);
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.header__navigation li {
+  margin-top: 12px;
+}
+
+.navigation-item__sub-list {
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  margin-top: 12px;
+}
+
+.header__navigation-title {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.navigation-item__link {
+  padding-top: 24px;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--dark-pink);
+}
+
+.header__button:hover ~ .header__navigation {
+  display: block;
 }
 
 .header__logo {
@@ -49,6 +92,7 @@ body {
 .header__button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__link {
@@ -138,7 +182,7 @@ body {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
-  color: #222222;
+  color: var(--dark-blue);
 }
 
 .products__text {
@@ -193,20 +237,24 @@ body {
   top: 180px;
   width: 138px;
   height: 43px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   background: none;
   color: white;
+  background: url(../img/Vector.svg) no-repeat;
+  background-position: center left;
+  opacity: 0.7;
 }
 
 .products__item:hover .products__item-butto {
   display: block;
+  justify-content: flex-start;
 }
 
 .options {
   display: flex;
   align-items: center;
   min-height: 340px;
-  background: #222224;
+  background: var(--dark-blue);
 }
 
 .options-wrapper {
@@ -233,7 +281,7 @@ body {
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  color: #fbfbfb;
+  color: var(--gray);
   text-align: center;
 }
 
@@ -263,7 +311,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #222224;
+  color: var(--dark-blue);
 }
 
 .footer__item-heading {
@@ -284,12 +332,135 @@ body {
 .footer__bottom {
   display: flex;
   align-items: center;
-  background: #222224;
+  background: var(--dark-blue);
   height: 80px;
 }
 
 .footer__botom-text {
   font-size: 16px;
   line-height: 19px;
-  color: #fbfbfb;
+  color: var(--gray);
+}
+
+.products__button {
+  display: block;
+  margin: 0 auto 96px;
+  width: 211px;
+  height: 47px;
+  color: var(--white);
+  background-color: var(--dark-pink);
+  border: 1px solid var(--red);
+}
+
+.footer__form {
+  display: block;
+  position: relative;
+  margin-top: 32px;
+}
+
+.footer__form-input {
+  width: 320px;
+  height: 50px;
+  background-color: var(--gray);
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.footer__form-button {
+  position: absolute;
+  right: 0;
+  border-radius: 0 50px 50px 0;
+  width: 85px;
+  height: 50px;
+  color: var(--white);
+  background-color: var(--dark-pink);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__form-button:hover {
+  background-color: var(--pink);
+}
+
+/* registration page */
+
+.page__heading {
+  height: 150px;
+  background: var(--pink);
+  color: var(--dark-pink);
+}
+
+.page__heading-header {
+  font-size: 24px;
+  line-height: 150px;
+}
+
+.form__container {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.form__container_left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 130px;
+  max-width: 360px;
+  color: var(--dark-gray);
+}
+
+.form__container_left-input {
+  margin-top: 20px;
+  height: 45px;
+  border-color: var(--gray);
+}
+
+.form__container_left label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.radiogroup {
+  display: flex;
+  margin: 30px 0;
+}
+
+.radiogroup input {
+  margin-right: 20px;
+}
+
+.form__container_left-text {
+  margin: 15px 0 40px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.form__container_left-button {
+  width: 170px;
+  height: 50px;
+  background-color: var(--dark-pink);
+  color: var(--white);
+  border: none;
+}
+
+.form__container_right {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.form__container_right-heading {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.form__container_right-text {
+  margin: 22px 0;
+}
+
+.form__container_right li {
+  margin-bottom: 16px;
+  padding-left: 43px;
+  background: url(../img/ok.png) no-repeat;
+  background-position: left;
 }
