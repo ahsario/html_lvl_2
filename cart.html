@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <div>
+      <img src="./img/icon1.svg" alt="logo" width="44" height="38" />
+      <img src="./img/icon2.svg" alt="loupe" width="26" height="27" />
+      </div>
+      <div>
+      <button class="header__button"  type="button">
+        <img src="./img/icon3.svg" alt="burger" width="32" height="23" />
+      </button>
+      <a href="#">
+        <img src="./img/icon4.svg" alt="person" width="32" height="23" />
+      </a>
+      <a href="#">
+        <img src="./img/icon5.svg" alt="basket" width="32" height="23" />
+      </a>
+      <nav class="header__navigation">
+        <h2 class="header__navigation-title">MENU</h2>
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item navigation-item">
+            <a class="navigation-item__link" href="#">MAN</a>
+            <ul class="navigation-item__sub-list">
+              <li class="navigation-item__sub-item"><a class="navigation-item__sub-item-link" href="#">Accessories</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">T-Shirts</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="navigation-item__link" href="#">WOMAN</a>
+            <ul class="navigation-item__sub-list">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">T-Shirts</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="navigation-item__link" href="#">KIDS</a>
+            <ul class="navigation-item__sub-list">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">T-Shirts</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+    <div class="page__heading">
+      <div class="container">
+        <h2 class="page__heading-header">SHOPPING CART</h2>
+      </div>
+    </div>
+
+    <section class="cart__body container">
+      <div class="cart__body_items">
+        <div class="cart__body_items-item">
+          <img src="img/section1_1.jpg" width="260" height="300">
+          <div class="close">&#10005;</div>
+          <div class="cart__body_items-item-info">
+            <h4>MANGO  PEOPLE  <br>T-SHIRT</h4>
+            <p>Price: <span>$300 </span>	</p>
+            <p>Color: Red</p>
+            <p>Size: Xl	</p>
+            <p>Quantity:	2</p>
+          </div>
+        </div>
+        <div class="cart__body_items-item">
+          <img src="img/section1_1.jpg" width="260" height="300">
+          <div class="close">&#10005;</div>
+          <div class="cart__body_items-item-info">
+            <h4>MANGO  PEOPLE  <br>T-SHIRT</h4>
+            <p>Price: <span>$300 </span>	</p>
+            <p>Color: Red</p>
+            <p>Size: Xl	</p>
+            <p>Quantity:	2</p>
+          </div>
+        </div>
+        <div class="cart__body_items-buttons">
+          <button type="button">CLEAR SHOPPING CART</button>
+          <button type="button">CONTINUE SHOPPING</button>
+        </div>
+      </div>
+
+      <div class="cart__body_shipping">
+        <h4>SHIPPING ADRESS</h4>
+        <input type="text" placeholder="Bangladesh"></input>
+        <input type="text" placeholder="State"></input>
+        <input type="text" placeholder="Postcode / Zip"></input>
+        <button type="button">GET A QUOTE</button>
+        <div class="cart__body_shipping-total">
+          <p>SUB TOTAL         $900</p>
+          <h5>GRAND TOTAL      $900</h5>
+          <hr>
+          <button type="button">PROCEED TO CHECKOUT</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container flexer">
+          <div class="footer__item">
+            <img src="./img/eblo.png" alt="woman" width="96" height="96" />
+            <p class="footer__quots-text">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+            </p>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__item-heading">SUBSCRIBE 
+              <span class="footer__item-subheading">FOR OUR NEWLETTER AND PROMOTION</span>
+            </h4>
+            <form class="footer__form">
+                <input class="footer__form-input" type="text">
+                <button class="footer__form-button" type="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container flexer">
+          <p class="footer__botom-text">© 2021  Brand  All Rights Reserved.</p>
+          <img src="./img/footer_icon.png" width="148" height="32" alt="icon">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

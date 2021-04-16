@@ -1,0 +1,39 @@
+.header {
+  background-color: $dark-blue;
+
+  &__wrapper {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navigation {
+    display: none;
+  }
+
+  &__logo {
+    margin: 0 41px 0 0;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+  }
+
+  &__link {
+    margin: 0 0 0 34px;
+  }
+
+  &__button-container {
+    background-color: burlywood;
+
+    &:hover {
+      background-color: coral;
+
+      .header__button-icon {
+        fill: $dark-pink;
+      }
+    }
+  }
+}

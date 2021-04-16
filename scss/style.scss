@@ -1,257 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.cart__body {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 96px;
-  padding-bottom: 130px;
-}
-
-.cart__body .cart__body_items .cart__body_items-item {
-  display: flex;
-  position: relative;
-  margin-bottom: 40px;
-  width: 650px;
-  height: 300px;
-  box-shadow: 10px 10px 10px #6f6e6e;
-}
-
-.cart__body .cart__body_items .cart__body_items-item .close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: #6f6e6e;
-}
-
-.cart__body .cart__body_items .cart__body_items-item .cart__body_items-item-info {
-  padding: 30px;
-  color: #6f6e6e;
-}
-
-.cart__body .cart__body_items .cart__body_items-item .cart__body_items-item-info h4 {
-  margin-bottom: 42px;
-  font-size: 24px;
-  line-height: 29px;
-  color: #222222;
-}
-
-.cart__body .cart__body_items .cart__body_items-item .cart__body_items-item-info p {
-  margin-bottom: 6px;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.cart__body .cart__body_items .cart__body_items-item .cart__body_items-item-info p span {
-  color: #f16d7d;
-}
-
-.cart__body .cart__body_items .cart__body_items-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 72px;
-}
-
-.cart__body .cart__body_items .cart__body_items-buttons button {
-  padding: 17px 40px;
-  border: 1px solid #a4a4a4;
-  background-color: white;
-  color: #6f6e6e;
-}
-
-.cart__body .cart__body_shipping {
-  display: flex;
-  flex-direction: column;
-  width: 360px;
-  color: #6f6e6e;
-}
-
-.cart__body .cart__body_shipping h4 {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  margin-bottom: 20px;
-}
-
-.cart__body .cart__body_shipping input {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 45px;
-  border: 1px solid #a4a4a4;
-}
-
-.cart__body .cart__body_shipping button {
-  width: 100px;
-  height: 35px;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
-  background-color: white;
-  border: 1px solid #a4a4a4;
-}
-
-.cart__body .cart__body_shipping .cart__body_shipping-total {
-  margin-top: 60px;
-  padding: 44px;
-  width: 360;
-  height: 215;
-  background-color: #f8f8f8;
-}
-
-.cart__body .cart__body_shipping .cart__body_shipping-total p {
-  font-size: 11px;
-  line-height: 13px;
-  text-align: end;
-}
-
-.cart__body .cart__body_shipping .cart__body_shipping-total h5 {
-  margin-top: 12px;
-  margin-bottom: 21px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: end;
-}
-
-.cart__body .cart__body_shipping .cart__body_shipping-total button {
-  margin-top: 17px;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  background-color: #f16d7d;
-  border: none;
-}
+@import "./variables";
+@import "./mixin";
+@import "./reset";
+@import "./blocks/cart";
 
 body {
   font-family: Lato;
@@ -276,7 +26,7 @@ body {
 }
 
 .header {
-  background-color: #222222;
+  background-color: $dark-blue;
 }
 
 .header__wrapper {
@@ -293,7 +43,7 @@ body {
   right: 0px;
   width: 232px;
   height: 764px;
-  background-color: white;
+  background-color: $white;
   padding: 35px;
   box-sizing: border-box;
 }
@@ -308,7 +58,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #6f6e6e;
+  color: $dark-gray;
   margin-top: 12px;
 }
 
@@ -323,7 +73,7 @@ a {
   padding-top: 24px;
   font-size: 14px;
   line-height: 17px;
-  color: v #f16d7d;
+  color: v$dark-pink;
 }
 
 .header__button:hover ~ .header__navigation {
@@ -347,13 +97,11 @@ a {
 .promo {
   display: flex;
   margin: 0 0 63px;
-  background-color: #f1e4e6;
+  background-color: $pink;
 }
-
 .promo__img {
   margin-left: 100px;
 }
-
 .promo__heading-wrapper {
   flex-grow: 1;
   align-items: center;
@@ -377,7 +125,7 @@ a {
 }
 
 .promo__sub-heading-pink {
-  color: #f16d7d;
+  color: $dark-pink;
 }
 
 .categories__list {
@@ -402,7 +150,7 @@ a {
 }
 
 .categories__heading {
-  color: #f16d7d;
+  color: $dark-pink;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -415,11 +163,9 @@ a {
 .categories__item--man {
   background-image: url(../img/section1_2.jpg);
 }
-
 .categories__item--kids {
   background-image: url(../img/section1_3.jpg);
 }
-
 .categories__item--accessories {
   margin-top: 30px;
   width: 100%;
@@ -431,7 +177,7 @@ a {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
-  color: #222222;
+  color: $dark-blue;
 }
 
 .products__text {
@@ -455,7 +201,7 @@ a {
   position: relative;
   margin-bottom: 30px;
   width: 360px;
-  background-color: #f8f8f8;
+  background-color: $gray;
   box-sizing: border-box;
 }
 
@@ -476,7 +222,7 @@ a {
 
 .products__item-price {
   margin: 0 0 20px 18px;
-  color: #f16d7d;
+  color: $dark-pink;
 }
 
 .products__item-butto {
@@ -486,9 +232,9 @@ a {
   top: 180px;
   width: 138px;
   height: 43px;
-  border: 1px solid white;
+  border: 1px solid $white;
   background: none;
-  color: white;
+  color: $white;
   background: url(../img/Vector.svg) no-repeat;
   background-position: center left;
   opacity: 0.7;
@@ -503,7 +249,7 @@ a {
   display: flex;
   align-items: center;
   min-height: 340px;
-  background: #222222;
+  background: $dark-blue;
 }
 
 .options-wrapper {
@@ -530,7 +276,7 @@ a {
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  color: #f8f8f8;
+  color: $gray;
   text-align: center;
 }
 
@@ -560,7 +306,7 @@ a {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #222222;
+  color: $dark-blue;
 }
 
 .footer__item-heading {
@@ -581,14 +327,14 @@ a {
 .footer__bottom {
   display: flex;
   align-items: center;
-  background: #222222;
+  background: $dark-blue;
   height: 80px;
 }
 
 .footer__botom-text {
   font-size: 16px;
   line-height: 19px;
-  color: #f8f8f8;
+  color: $gray;
 }
 
 .products__button {
@@ -596,9 +342,9 @@ a {
   margin: 0 auto 96px;
   width: 211px;
   height: 47px;
-  color: white;
-  background-color: #f16d7d;
-  border: 1px solid #ff6a6a;
+  color: $white;
+  background-color: $dark-pink;
+  border: 1px solid $red;
 }
 
 .footer__form {
@@ -610,7 +356,7 @@ a {
 .footer__form-input {
   width: 320px;
   height: 50px;
-  background-color: #f8f8f8;
+  background-color: $gray;
   border-radius: 50px;
   box-sizing: border-box;
 }
@@ -621,21 +367,22 @@ a {
   border-radius: 0 50px 50px 0;
   width: 85px;
   height: 50px;
-  color: white;
-  background-color: #f16d7d;
+  color: $white;
+  background-color: $dark-pink;
   font-size: 14px;
   line-height: 17px;
 }
 
 .footer__form-button:hover {
-  background-color: #f1e4e6;
+  background-color: $pink;
 }
 
 /* registration page */
+
 .page__heading {
   height: 150px;
-  background: #f1e4e6;
-  color: #f16d7d;
+  background: $pink;
+  color: $dark-pink;
 }
 
 .page__heading-header {
@@ -654,13 +401,13 @@ a {
   flex-direction: column;
   margin-right: 130px;
   max-width: 360px;
-  color: #6f6e6e;
+  color: $dark-gray;
 }
 
 .form__container_left-input {
   margin-top: 20px;
   height: 45px;
-  border-color: #f8f8f8;
+  border-color: $gray;
 }
 
 .form__container_left label {
@@ -686,8 +433,8 @@ a {
 .form__container_left-button {
   width: 170px;
   height: 50px;
-  background-color: #f16d7d;
-  color: white;
+  background-color: $dark-pink;
+  color: $white;
   border: none;
 }
 
@@ -712,4 +459,3 @@ a {
   background: url(../img/ok.png) no-repeat;
   background-position: left;
 }
-/*# sourceMappingURL=style.css.map */
