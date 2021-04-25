@@ -359,6 +359,178 @@ table {
   border: none;
 }
 
+.product__banner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-top: 1px solid #a4a4a4;
+  border-bottom: 1px solid #a4a4a4;
+}
+
+@media (max-width: 768px) {
+  .product__banner img {
+    width: 100%;
+  }
+}
+
+.product__banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  border-right: 5px solid #6f6e6e;
+  border-bottom: 5px solid #6f6e6e;
+  width: 25px;
+  height: 25px;
+  transform: translate(50%, -50%) rotate(135deg);
+}
+
+.product__banner::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  border-left: 5px solid #6f6e6e;
+  border-top: 5px solid #6f6e6e;
+  width: 25px;
+  height: 25px;
+  float: right;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.product__add {
+  border: 1px solid #a4a4a4;
+  position: relative;
+  top: -64px;
+  text-align: center;
+  padding: 64px;
+  box-sizing: border-box;
+  background-color: white;
+  font-weight: 300;
+  color: #6f6e6e;
+}
+
+@media (max-width: 768px) {
+  .product__add {
+    position: static;
+  }
+}
+
+.product__add .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__add .product__add_heading {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7d;
+  text-transform: uppercase;
+}
+
+.product__add .product__add_pink-line {
+  margin-bottom: 12px;
+  width: 63px;
+  height: 3px;
+  background: #f16d7d;
+}
+
+.product__add .product__add_subheading {
+  margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.product__add p {
+  margin-bottom: 32px;
+  max-width: 555px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product__add .product__add_price {
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7d;
+}
+
+.product__add .product_add_gray-line {
+  margin: 65px 250px;
+  width: 100%;
+  height: 1px;
+  background-color: #6f6e6e;
+}
+
+@media (max-width: 768px) {
+  .product__add .product_add_gray-line {
+    margin: 65px;
+  }
+}
+
+.product__add .product__add_choose {
+  display: flex;
+  justify-content: center;
+  margin-right: 22px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .product__add .product__add_choose {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.product__add .product__add_choose .product__add_choose-item {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .product__add .product__add_choose .product__add_choose-item {
+    margin-right: 0px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.product__add .product__add_choose .product__add_choose-item:after {
+  content: "  \142F";
+  font-size: 8px;
+}
+
+.product__add button {
+  padding: 14px 70px 14px 0;
+  color: #f16d7d;
+  background-color: white;
+  border: 1px solid #f16d7d;
+}
+
+.product__add button:before {
+  content: url(../../img/bascket.svg);
+  color: black;
+  padding: 0 22px;
+}
+
+@media (min-width: 625px) {
+  .product__list .products__list {
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 625px) {
+  .product__list .products__list .products__item {
+    margin-right: 30px;
+  }
+}
+
 body {
   font-family: Lato;
   font-style: normal;
@@ -801,11 +973,42 @@ a {
   height: 150px;
   background: #f1e4e6;
   color: #f16d7d;
+  vertical-align: middle;
 }
 
-.page__heading-header {
+.page__heading .page__heading-header {
   font-size: 24px;
   line-height: 150px;
+}
+
+.page__heading .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.page__heading .flex .page__heading-header {
+  line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .page__heading .flex {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.page__heading .page__heading-path {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+
+.page__heading .page__heading-path span {
+  color: #f16d7d;
 }
 
 .form__container {

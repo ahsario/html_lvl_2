@@ -2,6 +2,7 @@
 @import "./mixin";
 @import "./reset";
 @import "./blocks/cart";
+@import "./blocks/product";
 
 body {
   font-family: Lato;
@@ -427,11 +428,40 @@ a {
   height: 150px;
   background: $pink;
   color: $dark-pink;
-}
+  vertical-align: middle;
 
-.page__heading-header {
-  font-size: 24px;
-  line-height: 150px;
+  .page__heading-header {
+    font-size: 24px;
+    line-height: 150px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+
+    .page__heading-header {
+      line-height: 24px;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .page__heading-path {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-gray;
+
+    span {
+      color: $dark-pink;
+    }
+  }
 }
 
 .form__container {
