@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <div>
+          <img src="./img/icon1.svg" alt="logo" width="44" height="38" />
+          <img src="./img/icon2.svg" alt="loupe" width="26" height="27" />
+        </div>
+        <div>
+          <button class="header__button" type="button">
+            <img src="./img/icon3.svg" alt="burger" width="32" height="23" />
+          </button>
+          <a href="#">
+            <img src="./img/icon4.svg" alt="person" width="32" height="23" />
+          </a>
+          <a href="#">
+            <img src="./img/icon5.svg" alt="basket" width="32" height="23" />
+          </a>
+        </div>
+        <nav class="header__navigation">
+          <h1 class="header__navigation-title">MENU</h1>
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item navigation-item">
+              <a class="navigation-item__link" href="#">MAN</a>
+              <ul class="navigation-item__sub-list">
+                <li class="navigation-item__sub-item">
+                  <a class="navigation-item__sub-item-link" href="#"
+                    >Accessories</a
+                  >
+                </li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </li>
+            <li class="header__navigation-item navigation-item">
+              <a class="navigation-item__link" href="#">WOMAN</a>
+              <ul class="navigation-item__sub-list">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </li>
+            <li class="header__navigation-item navigation-item">
+              <a class="navigation-item__link" href="#">KIDS</a>
+              <ul class="navigation-item__sub-list">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="pageheading">
+      <div class="container">
+        <h2 class="pageheading__header">REGISTRATION</h2>
+      </div>
+    </div>
+
+    <section class="form container">
+      <form class="form__left" action="#">
+        <label for="name">Your Name</label>
+        <input
+          id="name"
+          class="form__left-input"
+          type="text"
+          placeholder="First Name"
+        />
+        <input class="form__left-input" type="text" placeholder="Last Name" />
+        <div class="radiogroup">
+          <p><input type="radio" />Male</p>
+          <p><input type="radio" />Female</p>
+        </div>
+        <label for="login">Login details</label>
+        <input
+          id="login"
+          class="form__left-input"
+          type="email"
+          placeholder="Email"
+        />
+        <input
+          class="form__left-input"
+          type="password"
+          placeholder="Password"
+        />
+        <div class="form__left-text">
+          Please use 8 or more characters, with at least 1 number and a mixture
+          of uppercase and lowercase letters
+        </div>
+        <button class="form__left-button">JOIN NOW &#8594;</button>
+      </form>
+      <div class="form__right">
+        <h3 class="form__right-heading">LOYALTY HAS ITS PERKS</h3>
+        <p class="form__right-text">
+          Get in on the loyalty program where you can earn points and unlock
+          serious perks. Starting with these as soon as you join:
+        </p>
+        <ul>
+          <li>15% off welcome offer</li>
+          <li>Free shipping, returns and exchanges on all orders</li>
+          <li>$10 off a purchase on your birthday</li>
+          <li>Early access to products</li>
+          <li>Exclusive offers & rewards</li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container flexer">
+          <div class="footer__item">
+            <img src="./img/eblo.png" alt="woman" width="96" height="96" />
+            <p class="footer__quots-text">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
+            </p>
+          </div>
+          <div class="footer__item">
+            <h4 class="footer__item-heading">
+              SUBSCRIBE
+              <span class="footer__item-subheading"
+                >FOR OUR NEWLETTER AND PROMOTION</span
+              >
+            </h4>
+            <form class="footer__form">
+              <input class="footer__form-input" type="text" />
+              <button class="footer__form-button" type="button">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container flexer">
+          <p class="footer__botom-text">© 2021 Brand All Rights Reserved.</p>
+          <img src="./img/footer_icon.png" width="148" height="32" alt="icon" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
