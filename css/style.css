@@ -531,6 +531,74 @@ table {
   }
 }
 
+.catalog__nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  padding: 0 30px;
+  margin: 50px 0;
+  box-sizing: border-box;
+}
+
+.catalog__nav .catalog__nav_filter {
+  color: black;
+  background: url("../../img/filter.svg") no-repeat right;
+}
+
+.catalog__nav button {
+  background: url("../../img/strelka.svg") no-repeat right;
+  padding-right: 25px;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .catalog__list {
+    max-width: 0 auto;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+    grid-gap: 16px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 625px) {
+  .catalog__list {
+    grid-template: 1fr/1fr;
+  }
+}
+
+.catalog__pagination {
+  display: flex;
+  width: fit-content;
+  margin: 50px auto 100px;
+  border: 1px solid #a4a4a4;
+  width: fit-content;
+}
+
+.catalog__pagination li {
+  list-style: none;
+}
+
+.catalog__pagination li a {
+  color: #6f6e6e;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+.catalog__pagination li a:hover {
+  color: #f16d7d;
+}
+
 body {
   font-family: Lato;
   font-style: normal;
@@ -589,14 +657,14 @@ body {
 
 .header__navigation {
   position: absolute;
-  top: 75px;
-  right: -232px;
+  top: -770px;
+  right: 0px;
   width: 232px;
   height: 764px;
   background-color: white;
   padding: 35px;
   box-sizing: border-box;
-  transition: right 0.7s ease-out 0.4s;
+  transition: top 0.7s ease-out 0.4s;
 }
 
 @media (max-width: 768px) {
@@ -634,7 +702,7 @@ a {
 }
 
 .header__button:hover ~ .header__navigation {
-  right: 0;
+  top: 0;
   z-index: 1;
 }
 

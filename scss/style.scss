@@ -3,6 +3,7 @@
 @import "./reset";
 @import "./blocks/cart";
 @import "./blocks/product";
+@import "./blocks/catalog";
 
 body {
   font-family: Lato;
@@ -57,14 +58,14 @@ body {
 
 .header__navigation {
   position: absolute;
-  top: 75px;
-  right: -232px;
+  top: -770px;
+  right: 0px;
   width: 232px;
   height: 764px;
   background-color: $white;
   padding: 35px;
   box-sizing: border-box;
-  transition: right 0.7s ease-out 0.4s;
+  transition: top 0.7s ease-out 0.4s;
 
   @media (max-width: $tablet) {
     width: 100%;
@@ -100,7 +101,7 @@ a {
 }
 
 .header__button:hover ~ .header__navigation {
-  right: 0;
+  top: 0;
   z-index: 1;
 }
 
