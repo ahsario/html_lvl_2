@@ -1,0 +1,61 @@
+.catalog__nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  padding: 0 30px;
+  margin: 50px 0;
+  box-sizing: border-box;
+  .catalog__nav_filter {
+    color: black;
+    background: url("../../img/filter.svg") no-repeat right;
+  }
+
+  button {
+    background: url("../../img/strelka.svg") no-repeat right;
+    padding-right: 25px;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap: 30px;
+
+  @media (max-width: $tablet) {
+    max-width: 0 auto;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+    grid-gap: 16px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $mobile) {
+    grid-template: 1fr/1fr;
+  }
+}
+
+.catalog__pagination {
+  display: flex;
+  width: fit-content;
+  margin: 50px auto 100px;
+
+  @include border();
+  width: fit-content;
+
+  li {
+    list-style: none;
+    a {
+      color: $dark-gray;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      margin-top: 0px;
+    }
+    a:hover {
+      color: $dark-pink;
+    }
+  }
+}
